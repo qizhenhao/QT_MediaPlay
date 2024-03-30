@@ -11,7 +11,7 @@ Rectangle {
     border.color: "lightgrey"
     radius: 10
 
-    property alias tracksInfo: tracksInfo
+    // property alias tracksInfo: tracksInfo
     property alias metadataInfo: metadataInfo
     required property MediaPlayer mediaPlayer
     required property int selectedAudioTrack
@@ -66,14 +66,14 @@ Rectangle {
 
         MetadataInfo { id: metadataInfo }
 
-        TracksInfo {
-            id: tracksInfo
-            mediaPlayer: root.mediaPlayer
-            selectedAudioTrack: root.selectedAudioTrack
-            selectedVideoTrack: root.selectedVideoTrack
-            selectedSubtitleTrack: root.selectedSubtitleTrack
-        }
+        // TracksInfo {
+        //     id: tracksInfo
+        //     mediaPlayer: root.mediaPlayer
+        //     selectedAudioTrack: root.selectedAudioTrack
+        //     selectedVideoTrack: root.selectedVideoTrack
+        //     selectedSubtitleTrack: root.selectedSubtitleTrack
+        // }
 
-        ThemeInfo { id: themeInfo }
+        // ThemeInfo { id: themeInfo }
     }
 }
